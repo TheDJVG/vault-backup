@@ -2,11 +2,15 @@
 Simple tool to backup a Vault raft snapshot to S3 or S3 compatible endpoint.
 
 ## Install
+Install directly using Go:
 ```
 go install github.com/thedjvg/vault-backup/cmd/vault-backup@latest
 ```
-
-Or build the container (currently no public image provided)
+Use the container image:
+```
+docker pull thedjvg/vault-backup:latest
+```
+Or build the container:
 ```
 docker build -t vault-backup .
 ```

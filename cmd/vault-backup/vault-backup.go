@@ -26,7 +26,7 @@ const (
 
 var (
 	authMode                = flag.String("authMode", "token", "Vault authentication mode: token or kubernetes")
-	serviceAccountTokenPath = flag.String("kubernetesServiceAccountPath", "/run/secrets/kubernetes.io/serviceaccount/token", "Path to kubernetes service account token")
+	serviceAccountTokenPath = flag.String("kubernetesServiceAccountPath", "/var/run/secrets/kubernetes.io/serviceaccount/token", "Path to kubernetes service account token")
 	vaultMount              = flag.String("mount", "secret", "Vault secret mount")
 	secretPath              = flag.String("secret", "", "Path to secret that contains S3 credentials")
 )
