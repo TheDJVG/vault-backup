@@ -19,7 +19,7 @@ When `-authMode token` is specicied `VAULT_TOKEN` is required.
 
 When `-authMode` is set to `kubernetes` a `VAULT_ROLE` environment variable should be set. Optionally `-kubernetesServiceAccountPath` can be specified when a service account is set to a different location.
 
-The token needs to have access to raft snapshot endpoint and optionally a secret with S3 credentials. See [examples/policy.hcl](example/policy.hcl) for an example.
+The token needs to have access to raft snapshot endpoint and optionally a secret with S3 credentials. See [examples/policy.hcl](examples/policy.hcl) for an example.
 
 ### S3
 Takes the standard `AWS_*` environment variables and aditionally accepts the following:
